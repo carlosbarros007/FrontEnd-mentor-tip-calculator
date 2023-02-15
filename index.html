@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body class="contaner container__flex">
+
+    <main class="calculator container__flex">
+
+        <section class="calculator__section__input">
+            <form class="calculator__form" >
+
+                <div>
+                <label class="calculator__label"  for="account__value">Bill</label>
+                <input class="calculator__number" id="account__value" type="number">
+                </div>
+
+                <div>
+                <label class="calculator__label" for="percentage__buttons">Select Tip %</label> 
+                <button class="calculator__butom">5%</button>
+                <button class="calculator__butom">10%</button>
+                <button class="calculator__butom">15%</button>
+                <button class="calculator__butom">25%</button>
+                <button class="calculator__butom">50%</button>
+                <input class="calculator__butom" id="percentage__buttons" type="number" placeholder="Custom" >
+                </div>
+
+                <div>
+                <label class="calculator__label" for="people__number">Number of People</label>
+                <input class="calculator__number" id="people__number" type="number">
+                </div>
+            </form>
+        </section>
+
+        <section class="calculator__section__exit">
+
+            
+                <p>
+                    Tip Amount <br>
+                    / person
+                </p>
+                <p>
+                    $ 4,34
+                </p>
+                <p>
+                    Total <br>
+                    / person
+                </p>
+                <p>
+                    $4,34
+                </p>
+
+                <p class="pseudo__button" onclick="reset()" >Reset</p>
+            
+
+        </section>
+    </main>
+
+    
+</body>
+</html>
